@@ -41,19 +41,8 @@ function loadData() {
 
             // console.log(result.recordsets[0].length);
             var dataset = result.recordsets[0];
-            console.log(dataset.find(x => x.UserName === 'apitestuser'));
-            // var res = dataset.take(1);
+            console.log(dataset.filter(x => x.UserName === 'apitestuser'));
 
-            // var arr = [1, 2, 3, 4, 5];
-            // console.log(Enumerable.from(arr).where(x=>x>3).toArray());
-            // var apart = Enumerable.range(1, 5);
-            // console.log(arr);
-            // console.log(apart.toJoinedString());
-            // console.log(arr.where(x => x>3));
-            // var res = arr.take(2);
-            // dataset.forEach(x => console.log(x.DomainName));
-            // console.log(dataset);
-            return;
         })
     }).catch((err) => console.log(err));
 

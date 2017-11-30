@@ -1,0 +1,12 @@
+{
+    
+  "name": "protractor_tes",
+  "version": "0.0.1",
+  "scripts": {
+    "postinstall":"webdriver-manager update",
+    "start":"webdriver-manager start"
+  },
+  "dependencies": {
+      "protractor":"5.1.1"
+  }
+}
