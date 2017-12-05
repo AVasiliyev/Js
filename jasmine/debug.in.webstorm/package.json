@@ -1,6 +1,24 @@
 {
-  "devDependencies": {
+  "name": "jasmine.tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/jasmine": "^2.8.2",
+    "@types/jasmine-expect": "^3.6.1",
     "jasmine": "^2.8.0",
-    "jasmine-spec-reporter": "^4.2.1"
-  }
+    "jasmine-reporters": "^2.2.1",
+    "jasmine-spec-reporter": "^4.2.1",
+    "rimraf": "^2.6.2",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tslint -p tslint.json && rimraf tmp && tsc && jasmine"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
