@@ -16,7 +16,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "tslint -p tslint.json && rimraf tmp && tsc && jasmine"
+    "pretest": "tslint -p tslint.json && rimraf tmp && tsc",
+    "test": "jasmine",
+    "tsc": "tsc",
+    "run": "tsc && node tmp/runner.js"
   },
   "keywords": [],
   "author": "",
